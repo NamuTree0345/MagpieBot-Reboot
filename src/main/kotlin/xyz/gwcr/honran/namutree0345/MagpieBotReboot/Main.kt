@@ -8,4 +8,5 @@ fun main() {
     var builder: JDABuilder = JDABuilder(File("./token.txt").readText())
     val api: JDA = builder.build()
     api.presence.activity = Activity.playing("👑 까치봇 부활!")
+    api.addEventListener(Listener(api))
 }
