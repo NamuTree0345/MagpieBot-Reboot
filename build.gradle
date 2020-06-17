@@ -10,6 +10,11 @@ repositories {
     mavenCentral()
     jcenter()
 }
+compileKotlin {
+
+    kotlinOptions.jvmTarget = '1.8'
+    kotlinOptions.suppressWarnings = true
+}
 
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib"
